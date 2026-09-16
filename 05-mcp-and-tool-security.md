@@ -221,3 +221,10 @@ sequenceDiagram
 - Sandbox every third-party server: restricted filesystem roots, network egress allow-listing, no default shell access.
 - Tier tool calls by risk and require real, plain-language human review for irreversible or privileged actions.
 - Log full `tools/call` request/response pairs with provenance tags so an analyst can distinguish trusted internal data from externally sourced content that flowed through a tool result.
+
+## Further Reading
+
+Verified against live sources during this book's construction (see `appendices/references.md`):
+
+- **Anthropic, "Introducing the Model Context Protocol"** (November 25, 2024). `https://www.anthropic.com/news/model-context-protocol` — the official announcement establishing MCP as an open standard, its client/server architecture, and initial adopters.
+- **Model Context Protocol project, "Specification" (version 2025-06-18)**. `https://modelcontextprotocol.io/specification/2025-06-18` — the current official MCP specification, including its explicit Security and Trust & Safety section (user consent, data privacy, tool safety, sampling controls).

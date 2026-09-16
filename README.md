@@ -12,7 +12,7 @@ A practitioner reference for SOC analysts, detection engineers, incident respond
 
 **7 real screenshots** (`real-screenshots/`, indexed in `appendices/screenshot-index.md`) — genuine Puppeteer/Chrome captures of a real Proxmox host, a real self-built vulnerability scanner, and a real DVWA instance in Docker, including an actually-executed SQL injection that dumped real database rows and an actually-executed reflected XSS.
 
-**111,337 words total** across chapters, playbooks, labs, and appendices (real `wc -w` count, not estimated) — roughly 294 pages at this book's own working ratio (the sister book's stated 475,000 words / 1,260 pages ≈ 377 words/page). **76 original Mermaid diagrams** across the book.
+**113,456 words total** across chapters, playbooks, labs, and appendices (real `wc -w` count, not estimated) — roughly 301 pages at this book's own working ratio (the sister book's stated 475,000 words / 1,260 pages ≈ 377 words/page). **76 original Mermaid diagrams**, **16 independently-verified external citations** (9 arXiv papers, 1 IETF RFC, 1 NIST Special Publication, 1 vendor security-research post, plus the OWASP/NIST-RMF/MITRE-ATLAS/ISO-42001/MCP framework citations) — see `appendices/references.md` for the full list and exactly which were live-verified vs. disclosed as unverified.
 
 ## Reading the book
 

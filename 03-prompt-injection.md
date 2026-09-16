@@ -177,3 +177,9 @@ Every variant above reduces to the same gap: no reliable boundary between instru
 [MANAGEMENT] Budget for this as an ongoing detection-engineering line item, not a one-time control. Every new AI-enabled workflow — a new RAG corpus, a new tool integration, a new agent handoff — opens a new instance of this problem. The question before any launch isn't "did we test for prompt injection" but "what's the blast radius if this content source is poisoned, and what's our telemetry on that path."
 
 [ENGINEER] The highest-leverage design decision you control is privilege separation between "the model decided to do X" and "X actually happened." Every category in this chapter gets meaningfully less dangerous if the action itself — the refund, the forward, the purchase, the file write — requires a check that doesn't trust the model's own assertion that the action is authorized.
+
+## Further Reading
+
+Verified against a live source during this book's construction (see `appendices/references.md`):
+
+- **Perez, F. & Ribeiro, I., "Ignore Previous Prompt: Attack Techniques For Language Models"** (2022). `https://arxiv.org/abs/2211.09527` — one of the earliest formal treatments of direct prompt injection attack techniques against LLMs.

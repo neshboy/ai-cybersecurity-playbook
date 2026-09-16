@@ -91,6 +91,8 @@ A threat model built with ATLAS in mind will ask questions ATT&CK-native thinkin
 
 ## ISO/IEC 42001
 
+**Verified against the live ISO catalog during this book's construction:** `https://www.iso.org/standard/42001.html` — "ISO/IEC 42001:2023 — Information technology — Artificial intelligence — Management system," Edition 1, 2023. This confirms the standard exists, its official title, and its 2023 publication — this book does not claim to have independently verified specific clause-level text, since the standard itself is a paid document (see `appendices/references.md`).
+
 ISO/IEC 42001 is the first international standard for an AI management system (AIMS) — structurally, it is to AI governance what ISO/IEC 27001 is to information security. If your organization is already ISO 27001 certified, the shape will be familiar: a management system built around leadership commitment, documented objectives, risk assessment, a defined scope of applicability, internal audit, and continual improvement, auditable by a third party toward formal certification.
 
 The standard is organization-level rather than model-level. It does not tell you how to secure a specific LLM deployment; it tells you what a functioning *management system* for governing AI looks like — policy, roles and responsibilities, resourcing, competence requirements for people working on AI systems, supplier management specific to AI, and a process for assessing AI-related impacts (including but not limited to security — ISO 42001 also expects attention to fairness, transparency, and societal impact, broader than a pure security framework).

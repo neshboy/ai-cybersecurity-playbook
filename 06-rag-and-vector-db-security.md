@@ -193,3 +193,9 @@ Three adjusters in an unrelated department, asking the assistant a routine quest
 - Enforce security filtering before ranking, not after; log the pre-filter candidate set for every query to make over-disclosure investigable after the fact.
 - Treat vector data as sensitive derived data (embedding inversion risk) in contracts, encryption posture, and vendor due diligence.
 - Require provenance-locked citation and independent verification that cited chunks actually support the claims attributed to them.
+
+## Further Reading
+
+Verified against a live source during this book's construction (see `appendices/references.md`):
+
+- **Zou, W., Geng, R., Wang, B., Jia, J., "PoisonedRAG: Knowledge Corruption Attacks to Retrieval-Augmented Generation of Large Language Models"** (2024). `https://arxiv.org/abs/2402.07867` — directly demonstrates knowledge-corruption/poisoning attacks specifically against RAG pipelines.

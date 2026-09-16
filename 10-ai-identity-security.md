@@ -132,3 +132,9 @@ For this to hold up under audit, the approval step needs the same rigor you'd de
 ## Putting It Together
 
 None of these controls -- OIDC delegation, workload identity, rotation discipline, RBAC/ABAC layering, identity-backed approval -- is unique to AI. What's new is the combination: an actor that makes autonomous decisions, at machine speed and volume, sometimes influenced by content it wasn't supposed to trust, chaining through multiple systems in a single request. Identity is the layer that turns "the agent did something wrong" into a bounded, attributable, reversible event instead of an open-ended one. Build it in at the same time you build the agent, not after the first incident review asks which credential was actually used.
+
+## Further Reading
+
+Verified against a live source during this book's construction (see `appendices/references.md`):
+
+- **Hardt, D. (Ed.), "The OAuth 2.0 Authorization Framework" (RFC 6749)** (October 2012). `https://datatracker.ietf.org/doc/html/rfc6749` — the core OAuth 2.0 standard underlying the delegated-permission and service-account patterns discussed in this chapter.

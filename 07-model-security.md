@@ -167,3 +167,15 @@ logic:
 ## Closing Notes for This Chapter
 
 Model security sits at the intersection of ML research and conventional security engineering, and the practical wins in this chapter lean heavily toward the conventional side: hash and sign your model artifacts, refuse pickle-backed checkpoints from untrusted sources, rate-limit and budget-cap inference the way you'd rate-limit any expensive API, and log policy-bypass events as security events rather than curiosities. The harder research-side problems — robust extraction resistance, provable poisoning detection, jailbreak-proof alignment — are active fields without settled solutions, and a defensible security posture doesn't require solving them; it requires treating the model as an asset with a supply chain, a confidentiality boundary, and a cost structure, and applying the same discipline you already apply to every other production system.
+
+## Further Reading
+
+All verified against live sources during this book's construction (see `appendices/references.md`):
+
+- **Tramèr, F., Zhang, F., Juels, A., Reiter, M.K., Ristenpart, T., "Stealing Machine Learning Models via Prediction APIs"** (2016). `https://arxiv.org/abs/1609.02943` — foundational model extraction research demonstrating equation-solving and API-based model theft.
+- **Shokri, R., Stronati, M., Song, C., Shmatikov, V., "Membership Inference Attacks against Machine Learning Models"** (2016). `https://arxiv.org/abs/1610.05820` — foundational membership inference attack research.
+- **Carlini, N. et al. (12 authors), "Extracting Training Data from Large Language Models"** (2020). `https://arxiv.org/abs/2012.07805` — demonstrates verbatim training-data extraction from LLMs via crafted prompts.
+- **Goodfellow, I.J., Shlens, J., Szegedy, C., "Explaining and Harnessing Adversarial Examples"** (2014). `https://arxiv.org/abs/1412.6572` — the foundational FGSM adversarial-examples paper.
+- **Gu, T., Dolan-Gavitt, B., Garg, S., "BadNets: Identifying Vulnerabilities in the Machine Learning Model Supply Chain"** (2017). `https://arxiv.org/abs/1708.06733` — foundational backdoor/trojan attack research via training-data poisoning.
+- **Zou, A., Wang, Z., Carlini, N., Nasr, M., Kolter, J.Z., Fredrikson, M., "Universal and Transferable Adversarial Attacks on Aligned Language Models"** (2023). `https://arxiv.org/abs/2307.15043` — the widely-cited GCG adversarial-suffix jailbreak research showing automated, transferable jailbreak generation.
+- **Wei, A., Haghtalab, N., Steinhardt, J., "Jailbroken: How Does LLM Safety Training Fail?"** (2023). `https://arxiv.org/abs/2307.02483` — systematic analysis of why safety-trained LLMs remain vulnerable to jailbreaking.

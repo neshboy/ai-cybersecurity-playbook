@@ -231,3 +231,9 @@ The word "immutable" is doing real work in this pattern's name, and it means som
 ## Bringing the Patterns Together
 
 These eight patterns are not independent options to pick from — they're layers. The gateway sits at the network edge; RAG segmentation and agent tiering sit inside the application layer; multi-agent trust boundaries and tool sandboxing sit inside the agent runtime; approval gates sit between agent decision and real-world action; and audit logging threads through all of it as the connective tissue that makes the rest verifiable after the fact. An organization that implements approval gates and audit logging but skips agent tiering has built a system where the human approver has no way to know whether the "scoped action agent" asking for sign-off is actually running on a scoped credential or a leftover admin one. The patterns are cheap individually and genuinely protective in combination — which is exactly the property you want from architecture, as opposed to a single point control that an attacker only has to beat once.
+
+## Further Reading
+
+Verified against a live source during this book's construction (see `appendices/references.md`):
+
+- **Rose, S., Borchert, O., Mitchell, S. (NIST); Connelly, S. (DHS/CISA), "Zero Trust Architecture" (NIST Special Publication 800-207)** (August 2020). `https://csrc.nist.gov/pubs/sp/800/207/final` — the standard zero-trust framework underlying the privileged-vs-read-only agent tiering and trust-boundary patterns in this chapter.

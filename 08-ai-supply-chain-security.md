@@ -131,3 +131,9 @@ None of the risks above require exotic tooling to mitigate -- they require makin
 None of these controls are unique to AI systems in mechanism -- hash verification, dependency pinning, and image-digest pinning are standard software supply chain practice. What's specific to AI is the set of artifact types (model weights, tokenizers, datasets) that many existing supply chain tools don't yet recognize, and the trust culture around model hubs that treats "it's on Hugging Face" as roughly equivalent to "it's been reviewed," which it is not. Closing that gap is less about new technology and more about extending an organization's existing supply chain discipline to artifact types it hasn't gotten around to covering yet.
 
 [MANAGEMENT] When you're asked to sign off on an AI initiative's timeline, the single highest-leverage question to ask the ML platform team is whether model and dataset provenance checks are a *gate* in the deployment pipeline or a *guideline* engineers are trusted to follow. Guidelines get skipped under deadline pressure precisely when supply chain risk is highest -- during a rushed launch, when someone downloads "whatever works" from a hub search rather than the specific artifact the team vetted last quarter.
+
+## Further Reading
+
+Verified against a live source during this book's construction (see `appendices/references.md`):
+
+- **Cohen, D. (JFrog Security Research), "Data Scientists Targeted by Malicious Hugging Face ML Models with Silent Backdoor"** (February 27, 2024). `https://jfrog.com/blog/data-scientists-targeted-by-malicious-hugging-face-ml-models-with-silent-backdoor/` — documents approximately 100 real malicious pickle-based PyTorch models found uploaded to the Hugging Face Hub, including reverse-shell backdoors, demonstrating a genuine (not hypothetical) ML supply-chain attack.
