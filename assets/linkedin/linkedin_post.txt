@@ -1,0 +1,15 @@
+An AI Cybersecurity Playbook. Built for defenders. Free. Public.
+
+A red-team writeup that only shows the injection that worked isn't evidence — it's marketing. This one shows all of them, including the ones that failed.
+
+From AI foundations → the AI attack surface → prompt injection & agent/tool abuse → RAG & model security → AI supply chain, data, and identity → AI-enabled SOC operations → detection, forensics & threat hunting → governance, maturity, and real-world incidents.
+
+Inside: 23 chapters, 16 AI-00x incident-response playbooks (the same [ANALYST]/[ENGINEER]/[MANAGEMENT]/[STAKEHOLDER] format as its sister volume), 76 original Mermaid diagrams, and mapping to OWASP Top 10 for LLM Applications (2025), MITRE ATLAS, the NIST AI RMF, and ISO/IEC 42001.
+
+What makes it different: 4 labs run for real against a local Ollama install — real HTTP calls, real tool-calling API, real SHA-256 over the actual model blob — including two prompt-injection attempts and one agent tool-call hijack attempt that are printed as failures, verbatim, because that's what actually happened. Nothing was iterated on until it "succeeded."
+
+16 external citations, independently checked against a live source before being cited, not recalled from memory. No screenshots of any commercial security product — none were available under a license while writing it, and faking one would be worse than not having one at all.
+
+Every chapter is approached from four angles — SOC analyst, detection engineer, SOC manager, and CISO/stakeholder.
+
+Repo: https://github.com/neshboy/ai-cybersecurity-playbook
