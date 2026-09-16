@@ -1,0 +1,10 @@
+Manifest declares model layer digest: sha256:dde5aa3fc5ffc17176b5e8bdc82f587b24b2678c6c66101bf7da77af9f7ccdff
+Manifest declares model layer size:   2019377376 bytes
+Blob file on disk:                    C:\Users\User\.ollama\models\blobs\sha256-dde5aa3fc5ffc17176b5e8bdc82f587b24b2678c6c66101bf7da77af9f7ccdff
+Blob file actual size on disk:         2019377376 bytes
+Size match: True
+
+Computing real SHA-256 over the full ~2GB blob file (this takes a moment)...
+Expected hash (from manifest): dde5aa3fc5ffc17176b5e8bdc82f587b24b2678c6c66101bf7da77af9f7ccdff
+Actual computed hash:          dde5aa3fc5ffc17176b5e8bdc82f587b24b2678c6c66101bf7da77af9f7ccdff
+Integrity check PASSED: True
