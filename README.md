@@ -10,6 +10,8 @@ A practitioner reference for SOC analysts, detection engineers, incident respond
 
 **4 real labs** (2,175 words of writeup, plus the actual `.py` scripts and raw captured output alongside them) — not diagrams: actual commands run against a real local Ollama installation, output reproduced verbatim, including two negative/failed injection attempts reported honestly rather than edited to "succeed."
 
+**7 real screenshots** (`real-screenshots/`, indexed in `appendices/screenshot-index.md`) — genuine Puppeteer/Chrome captures of a real Proxmox host, a real self-built vulnerability scanner, and a real DVWA instance in Docker, including an actually-executed SQL injection that dumped real database rows and an actually-executed reflected XSS.
+
 **111,337 words total** across chapters, playbooks, labs, and appendices (real `wc -w` count, not estimated) — roughly 294 pages at this book's own working ratio (the sister book's stated 475,000 words / 1,260 pages ≈ 377 words/page). **76 original Mermaid diagrams** across the book.
 
 ## Reading the book
@@ -22,7 +24,7 @@ A practitioner reference for SOC analysts, detection engineers, incident respond
 
 ## What's real vs. conceptual — the short version
 
-This book contains **no screenshots of any commercial security product** (no Splunk, Sentinel, QRadar, CrowdStrike, or similar) because no licensed access to those products existed while writing it, and this book does not fabricate an interface and present it as real. Diagrams throughout are original Mermaid diagrams, same convention as the sister book. The four labs are the one place with genuinely real, executed evidence — real Ollama commands, real API calls, real model-file hashing. See `appendices/evidence-and-visual-audit.md` for the full accounting, including what a future pass would need to add real commercial-product screenshots.
+This book contains **no screenshots of any commercial security product** (no Splunk, Sentinel, QRadar, CrowdStrike, or similar) because no licensed access to those products existed while writing it, and this book does not fabricate an interface and present it as real. Diagrams throughout are original Mermaid diagrams, same convention as the sister book. What it does have: 4 labs with genuinely real, executed evidence (real Ollama commands, real API calls, real model-file hashing) and 7 real screenshots of real systems — a real Proxmox host, a real self-built vulnerability scanner, and a real, actually-exploited DVWA instance (genuine SQL injection, genuine reflected XSS). See `appendices/evidence-and-visual-audit.md` and `appendices/screenshot-index.md` for the full accounting, including what a future pass would need to add real commercial-product screenshots.
 
 ## What's synthetic
 

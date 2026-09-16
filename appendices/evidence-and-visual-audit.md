@@ -10,12 +10,13 @@ This appendix exists so no reader has to guess what's real. It's an honest accou
 | Indirect prompt-injection test (3 calls) | Lab 2 | Real HTTP calls to a real local Ollama `/api/chat` endpoint; model replies reproduced verbatim, including the negative (injection-failed) results |
 | Agent tool-call hijack test (2 calls) | Lab 3 | Real HTTP calls using Ollama's real tool-calling API with a registered `send_email` function; raw JSON response objects reproduced verbatim |
 | Model supply-chain integrity check | Lab 4 | Real SHA-256 computed over the actual ~2GB local model blob file, compared against Ollama's own manifest digest |
+| 7 real screenshots | `real-screenshots/`, indexed in `screenshot-index.md` | Real Puppeteer + real Chrome browser automation against a real Proxmox host, a real self-built vulnerability scanner, and a real DVWA instance in Docker — including a genuinely executed SQL injection that actually dumped 5 real database rows, and a genuinely executed reflected XSS that actually rendered injected HTML |
 
-No text in Labs 1–4 was edited to make a result look more favorable than what was actually returned. Where an injection attempt failed to work, that is reported as the finding, not iterated on until it "succeeded."
+No text in Labs 1–4 was edited to make a result look more favorable than what was actually returned. Where an injection attempt failed to work, that is reported as the finding, not iterated on until it "succeeded." The screenshots in `real-screenshots/` are unedited PNG captures, not recreations.
 
 ## What is explicitly NOT in this book
 
-- **No screenshots of any commercial security product** (no Splunk, Microsoft Sentinel, IBM QRadar, CrowdStrike Falcon, SentinelOne, Microsoft Defender XDR, Nessus, or similar). None of these were available under a license the author held while writing this book, and this book does not fabricate an interface and present it as a real product — that would be worse than having no screenshot at all.
+- **No screenshots of any commercial security product** (no Splunk, Microsoft Sentinel, IBM QRadar, CrowdStrike Falcon, SentinelOne, Microsoft Defender XDR, Nessus, or similar). None of these were available under a license the author held while writing this book, and this book does not fabricate an interface and present it as a real product — that would be worse than having no screenshot at all. This book does contain real screenshots of real, non-commercial or self-built systems — see `screenshot-index.md`.
 - **No fabricated terminal output.** Every command-line result presented as output was either actually run (Labs 1–4) or is explicitly framed as illustrative/pseudocode (detection-query sketches in Chapter 12).
 - **No invented academic citations, DOIs, or paper titles.** Chapter 22 names only research and incidents the writing process was confident are real and were broadly, publicly reported, and explicitly separates confirmed fact from reported claim from speculation for each one.
 
@@ -29,4 +30,4 @@ KQL-style, SPL-style, and pseudocode detection logic in Chapter 12 (AI Detection
 
 ## If you want real commercial-product screenshots added later
 
-The realistic path, in order of effort: (1) a self-hosted, free/open-source stand-in — Elastic/Kibana, Wazuh, TheHive — run in Docker on this same kind of workstation, no new account needed; (2) a throwaway personal cloud account (never a corporate one) for AWS/Azure/GCP AI-service consoles; (3) a Splunk or Sentinel trial specifically for this purpose. None of this was in scope for this pass — see the book's own commit history / project notes for status.
+The realistic path, in order of effort: (1) a self-hosted, free/open-source stand-in — Elastic/Kibana, Wazuh, TheHive — run in Docker on this same kind of workstation, no new account needed (the DVWA screenshots in `screenshot-index.md` are a first, smaller example of exactly this approach, done in this pass); (2) a Windows VM with Sysmon for real Event Viewer evidence (bigger lift — a fresh VM build, not attempted this pass); (3) a throwaway personal cloud account (never a corporate one) for AWS/Azure/GCP AI-service consoles; (4) a Splunk or Sentinel trial specifically for this purpose.

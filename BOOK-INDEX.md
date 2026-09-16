@@ -62,3 +62,4 @@ Full table of contents in reading order. See `README.md` for the honesty/evidenc
 - [Appendix A — Glossary](appendices/glossary.md)
 - [Appendix B — Evidence and Visual Audit](appendices/evidence-and-visual-audit.md)
 - [Appendix C — Frameworks, Standards, and References](appendices/references.md)
+- [Appendix D — Real Screenshot Index](appendices/screenshot-index.md)
